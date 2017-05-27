@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_weight="25"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/contact_image"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingStart="10dp"
+            android:id="@+id/contact_name"
+            android:text="name"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:paddingStart="10dp"
+            android:id="@+id/contact_email"
+            android:text="email@email.com"
+            android:textStyle="italic"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="40"
+        android:background="@drawable/phone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
